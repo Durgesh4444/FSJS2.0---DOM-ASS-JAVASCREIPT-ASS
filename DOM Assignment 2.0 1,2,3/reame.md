@@ -163,8 +163,7 @@ ___
 *DOM Asignment 5*
 ___
 ## Task 1
-
-The user has to append a new element in the navigation menue named **"Hire Me"** after **Projects**.
+**Projects**.
 
 ### **After Updates**
 ![Output Image](../05_DOM%20Project/05_DOM%20Project/Output/DOM%20P2%20SS.png)
@@ -183,14 +182,140 @@ ___
 *DOM Asignment 6*
 ___
 ## Task 1
-
-The user has to append a new element in the navigation menue named **"Hire Me"** after **Projects**.
+**Projects**.
 
 ### **After Updates**
 ![Output Image](../06_DOM%20Project/06_DOM%20Project/Output/DOM%20P3%20SS-1.png)
 
+
+
 ### **Project Solution**
 ```js
+document.querySelector("header img").src="https://jobs.ineuron.ai/images/ineuron-logo.png"
+```
+## Task 2
+![Output Image](../06_DOM%20Project/06_DOM%20Project/Output/DOM%20P3%20SS-2.png)
 
+### **Project Solution**
+```js
+document.querySelector(".app_price span").innerText="$10";
+let parent=document.querySelector(".footer_social");
+let child=document.createElement("div");
+child.className="footer_social_ico";
+child.innerHTML="<i></i>"
+child.querySelector("i").className="fa-brands fa-linkedin"
+parent.appendChild(child);
+```
+
+DOM Asignment 7*
+___
+## Task 1
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P7/DOM%20P7/ass7.1-before.png)
+
+### **After Updates**
+![Output Image](../DOM%20P7/DOM%20P7/ass7.1-after.png)
+
+### **Project Solution**
+```js
+let j2 = document.querySelector(".main__languages");
+for (let n=3; n<8; n++){
+j2.removeChild(j2.children.item(n));
+}
+```
+
+## Task 2
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P7/DOM%20P7/ass7.2-before.png)
+
+### **After Updates**
+![Output Image](../DOM%20P7/DOM%20P7/ass7.2-after.png)
+
+
+### **Project Solution**
+```js
+let btn =document.querySelector(".main__form-btn");
+btn.addEventListener("click", function reload(){document.location.reload()});
+```
+
+DOM Asignment 8*
+___
+## Task 1
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P8/DOM%20P8/ass8.1-before.png)
+### **After Updates**
+![Output Image](../DOM%20P8/DOM%20P8/ass8.1-after.png)
+### **Project Solution**
+```js
+// remove navbar
+
+document.querySelector(".navbar-brand").innerHTML = ""; document.querySelector(".navbar-nav").innerHTML = "";
+
+// add red color border to the div
+
+document.querySelector(".col-lg-4").style.border = "3px solid red";
+
+// add vertical scrollbar
+
+let list = document.querySelector("aside"); let newscrollbar = document.querySelector(".new"); newscrollbar.style.overflowY = "scroll";
+
+// add horizontal line
+
+let aside = document.querySelector(".hr-line"); aside.overflow = "auto"; list.appendChild(aside);
+
+// add h3
+
+let heading = document.querySelector(".new-head"); heading.innerHTML = "This is my custom heading"; list.appendChild(heading);
+```
+
+## Task 2
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P8/DOM%20P8/ass8.2-before.png)
+### **After Updates**
+![Output Image](../DOM%20P8/DOM%20P8/ass8.2-after.png)
+### **Project Solution**
+```js
+let bgc = document.querySelector("body"); bgc.style.background = "#fff";
+```
+
+## Task 3
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P8/DOM%20P8/ass8.3-before.png)
+### **After Updates**
+![Output Image](../DOM%20P8/DOM%20P8/ass8.3-after.png)
+### **Project Solution**
+```js
+let navbartogglebutton = document.querySelector(".navbar-toggler"); navbartogglebutton.addEventListener("click", function(){ document.querySelector("#navbarTogglerDemo01").classList.toggle("collapse"); })
+```
+
+DOM Asignment 9*
+___
+## Task 1
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P9/DOM%20P9/ass9.1-before.png)
+### **After Updates**
+![Output Image](../DOM%20P9/DOM%20P9/ass9.1-after.png)
+### **Project Solution**
+```js
+let heading=document.querySelector("h1");
+heading.style.color="red"
 
 ```
+## Task 2
+**Projects**.
+### **Before Updates**
+![Output Image](../DOM%20P9/DOM%20P9/ass9.2-before.png)
+### **After Updates**
+![Output Image](../DOM%20P9/DOM%20P9/ass9.2-after.png)
+### **Project Solution**
+```js
+let btn=document.querySelector(".add-to-cart");
+btn.style.backgroundColor="red";
+```
+
